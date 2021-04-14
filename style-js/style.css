@@ -1,0 +1,961 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Oxygen', sans-serif ;
+    background-color: rgb(243, 234, 240);
+    
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainIndex{
+    width: 90%;
+    position: relative;
+}
+
+hr{
+    width: 40%;
+    border : 2px solid pink;
+    margin : 2em auto;
+   
+  
+}
+
+/* page index 
+*
+* Animation des 100 premiers VH
+*/
+
+
+.haut{
+    height: 100vh;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+
+.haut h1{
+    animation: titre 0.5s linear;
+}
+
+.haut p{
+    color : rgb(243, 234, 240);
+    position : relative;
+    padding-left: 0;
+    padding-right: 0;
+   
+}
+
+.haut p::before{
+    content: "Développeuse... Web";
+    position : absolute;
+    top: 0 ;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color : #BB1159;
+    overflow: hidden;
+    /* border-right: 2px dotted pink; */
+    animation: text 6s 0.5s linear infinite;
+
+}
+
+@keyframes titre{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes text{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+/*------------------- INDEX CARTES-------------------------*/
+.section-title{
+    display: flex;
+    align-items: center;
+   
+}
+
+.section-title h3{
+    font-size: 1.4em;
+    text-align: start;
+}
+.container-cards{
+    margin-top: 2em;
+}
+
+.container-card{
+    min-height: 85vh;
+    padding: 20px;
+}
+.troisieme{
+    border-bottom : 0px;
+}
+
+.description{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.description h5{
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+.description h4{
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+.description p{
+    text-align: justify;
+}
+
+
+
+.card{
+  
+    display: flex;
+    width:100% ;
+    align-items: center;
+}
+
+.photo-card {
+    width: 110%;
+  
+}
+
+
+.lien-Gauche{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 4em auto 0 auto;
+    width: 200px;
+    color : black;
+    border: 1px solid pink;
+    padding: 10px;
+    background: white;
+    transition : 0.3s linear;
+    
+}
+
+
+
+
+
+/* LES PAGES */
+.centrer{
+    text-align: center;
+} 
+
+.container-intro{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.image-article1{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.intro{
+    font-style: italic;
+}
+.image-article{
+    width: 100%;
+    margin-top: 1em;
+}
+.container-img-articles-tel{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carte-article-tel{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.container-autre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.truc{
+    display: flex;
+}
+
+
+.accueil{
+    width: 20px;
+    margin-left: 30px;
+}
+
+.flecheUp{
+    transform: rotate(180deg);
+}
+
+.bas-suggestions h3{
+    font-size: 1.5em;
+    margin-left: 0;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.bas-suggestions h4{
+  font-size: 1em;
+}
+.container-suggestions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.suggestion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-suggestions{
+    width: 100px;
+    transition: 0.3s;
+}
+
+.images-suggestions:hover{
+    transform: scale(1.1);
+}
+
+
+footer{
+    margin-top: 4em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color : #BB1159;
+    font-weight: 600;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+/*TITRES*/
+h1{
+    margin-top : 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;  
+}
+
+h2{
+  
+    margin-top: 1em;
+}
+
+h3{ 
+    font-size: 1em;  
+    margin-top: 1em; 
+    margin-left: 1em;
+}
+
+
+h4{
+    text-align: center;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    font-size: 1.3em;
+
+}
+
+.titre{
+    color :  #BB1159;
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-top: 4em;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 2px solid black;
+}
+
+p{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+ 
+   
+}
+
+/* LES FORMULAIRES */
+.form1{
+ margin: 0 2em 2em 2em;
+}
+.form1 input, .form2 input {
+    display: block;
+    width: 100%;
+    padding: 2vh;
+    margin-bottom: 2em;
+}
+
+.form1 select{
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+.form1 label{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.container-envoie{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-envoie input{
+    display: block;
+    margin-top: 2em;
+}
+
+.form1 button, .form2 button{
+    background-color:white;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.form1 button:hover, .form2 button:hover{
+    background-color: #BB1159;
+    color : white;
+}
+.form1 textarea{
+    display: block;
+    width: 100%;
+    padding: 2%;
+    height: 50vh;
+    margin-bottom: 2em;
+}
+
+.tag{
+   
+    padding: 10px;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 7px;
+    margin-right: 25px;
+    background-color: #BB1159;
+    color: white;
+    font-weight: 600;
+    transition: 0.1s linear;
+    cursor : pointer;
+}
+
+.tag:hover{
+    background-color: white;
+    color : black;
+}
+.container-textarea{
+    position: relative;
+}
+
+.container-photoArticle-textarea{
+    position: absolute;
+    display: none;
+    overflow: auto;
+    background-color: white;
+    width: 100%;
+    height: 70vh;
+
+}
+
+
+.containerphoto2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.containerphoto2 div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+
+}
+.close{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding : 0 5px 2px 5px;
+    margin : 1em; 
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.close:hover{
+    background-color: black;
+    color: white;
+}
+
+/* PAGE DES CATEGORIES*/
+
+.success{
+    background-color: rgb(69, 177, 69);
+    padding: 15px;
+    text-align: center;
+}
+
+.unSuccess{
+    background-color: rgb(219, 51, 51);
+    padding: 15px;
+    text-align: center;
+}
+
+.categories{
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+}
+
+.categories p {
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+/* PAGE TABLEAU DE BORD*/
+
+table{
+    width: 100%;
+}
+
+td{
+    border : 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+td h1, td h2{
+    font-size: 1em;
+  
+    
+}
+
+/*PAGE GALLERIE*/
+.containerphoto1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.containerphoto1 div{
+margin-bottom: 2em;
+margin-top: 4em;
+text-align: center;
+}
+
+.titrecentrer{
+    text-align: center;
+}
+.iconetrash{
+    display: block;
+    margin: 0 auto;
+}
+.imageGallerie{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.imageGallerie2{
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* NAVIGATION HEADER */
+.nav-header{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+  
+}
+
+
+
+
+.menu-matieres-tel{
+    height: 90vh;
+    display: none;
+    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+  
+}
+
+.menu-matieres-tel a:hover{
+color : white
+}
+.menu-matieres, .menu-contact{
+    display:none;
+}
+.ul-menu-matieres{
+    display: flex;
+
+}
+
+
+.matieres2{
+    width: 400px;
+    justify-content: space-between;
+}
+.li-contact{
+    margin-right: 1em;
+
+}
+
+.ul-menu-matieres a, .menu-contact a{
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+    color :rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+.ul-menu-matieres a:hover, .menu-contact a:hover{
+    color : #910D45;
+}
+.li-menu{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slash{
+    color : #910D45;
+    padding : 0 10px
+}
+/* LES ICONES */
+.icones{
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+
+.icones2{
+    width:30px;
+
+}
+
+.icones3{
+    width: 40px;
+ 
+}
+
+#menu{
+    width: 30px;
+    margin-top: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.icones-rs{
+    width: 20px;
+}
+
+.icones-rs:hover, #menu:hover{
+    fill:#910D45;
+    transition-duration: 0.2s;
+}
+
+.rs{
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.icones2:not(:last-child){
+    margin-right: 10px;
+}
+
+/*button*/
+#fleche_down{
+    height: 10px;
+    cursor: pointer;
+    fill:#BB1159
+    
+}
+#fleche_down:hover{
+    fill: black;
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   text-decoration: none;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+.bouton-site{
+    margin-top: 1em;
+    background-color: #BB1159;
+    font-weight: 300;
+    color : white;
+    border-radius: 16px;
+    padding : 10px
+}
+.button-fleche{
+    height: 30px;
+    padding: 5px;
+    border:none;
+    background-color:rgb(230, 165, 205);
+    margin-left: 1em;
+    margin-top: 0.5em;
+
+}
+#buton2, #buton3{
+    background-color: white;
+}
+
+.button-lien-site{
+    padding: 6px;
+    font-family:'Oxygen', sans-serif ;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(194, 192, 192);
+    border : none
+}
+
+
+.button-lien-site:hover{
+    opacity: 0.8;
+}
+
+
+.lien-Gauche:hover{
+ border: 1px solid white;
+ background-color: pink;
+ border-radius: 7px;
+}
+/* LES CONTAINERS */
+
+.container-bas{
+    padding: 10px;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+
+
+.container-avatar-text{
+    display: flex;
+   flex-direction: row-reverse;
+   padding: 2em 0;
+
+}
+.container-avatar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-button{
+    display: flex;
+ 
+    flex-wrap: wrap;
+}
+
+
+
+.avatar{
+    border-radius: 7px;
+    height: 100px;
+    display: block;
+    width: 100px;
+    box-shadow: 5px 5px 5px rgb(194, 192, 192);
+}
+
+.about{
+    background-color: rgb(230, 165, 205);
+    margin-top: 1em;
+    color: black;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(194, 192, 192, 0.863);
+    border: 2px solid  #910D45;;
+    
+}
+.container-titre-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ 
+ 
+}
+
+
+.container-projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+   
+}
+
+
+
+
+/* LES LISTES */
+.objectif{
+   
+    margin: 2em 0 2em 2em 
+
+}
+
+.li-objectif{
+padding-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px){
+   
+   /*Index*/
+    .mainIndex{
+        width: 100%;
+    }
+   h4{
+       margin-bottom: 2em;
+   }
+
+  
+    .container-card{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     
+    
+   }
+
+   
+
+   .description{
+       width: 60%;
+       margin-right: 100px;
+       margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+       
+      
+   }
+
+   .card{
+       margin: 0;
+      
+   }
+
+   .photo-card{
+    width: 100%;
+
+   }
+
+  
+
+  
+   .second{
+       flex-direction: row-reverse;
+       margin-top: 1em;
+       margin-bottom: 1em;
+      
+   }
+
+  
+   /* Les articles */
+   .container-intro{
+       margin-bottom: 10em;
+   }
+   .intro{
+       margin-top: -0.5em;
+       text-align: center;
+       
+   }
+
+   .imagetel{
+       width: 300px;
+   }
+
+   .container-img-articles-tel{
+       flex-direction: row;
+       justify-content: space-between;
+   }
+
+   .carte-article-tel{
+       width: 40%;
+       max-width: 450px;
+   }
+
+   .accueil{
+       width: 30px;
+   }
+
+   .container-autre{
+       margin-bottom: 2em;
+   }
+
+   .bas-suggestions h4{
+    font-size: 1.2em;
+  }
+  .images-suggestions{
+      width: 200px;
+  }
+
+
+    .icones-rs{
+       width: 40px;
+   }
+    .avatar{
+        width: 150px;
+        height: 150px;
+    }
+
+    .titre2{
+        margin-right: 4em;
+        font-size: 2.2em;
+    }
+
+    .about{
+        width: 50%;
+       
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .li-menu{
+        font-size: 1.2em;
+    }
+
+    
+
+    .title-section-card{
+        width: 98%;
+    }
+
+    
+
+    /* menu */
+    #menu{
+       display: none;
+    }
+
+    .menu-tel{
+        display: none;
+    }
+    .menu-matieres, .menu-contact{
+        display:block;
+    }
+
+    /*La galerie*/
+    .containerphoto1{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+       
+    }
+
+    .containerphoto1 div{
+        margin-right: 40px;
+    }
+
+    .titrecentrer{
+        text-align: start;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+section {
+    width: 80%;
+    margin : 0 auto
+}
+}
