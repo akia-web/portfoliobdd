@@ -63,6 +63,16 @@ $resultatArticles = executeRequete("SELECT image, titre, commentaire, id, catego
 <main  class="mainIndex">
 
     
+<section class="haut">
+        <h1>Charline Royer</h1>
+        <p> Développeuse... Web</p>
+
+        <a href="#projets"><img class="icones icones3" src="images/arrow-down.svg" alt="Icone de fleche qui descent"></a>
+    </section>
+    
+    <p>Passionnée du développement web depuis l'année dernière, je me suis formée sur les langages Html / Css Php et javascript/jquery <br>
+    Je vous présente mes projets personnels ainsi que ceux réalisés en cours.
+    </p>
 
     <section class="container-bas">
 

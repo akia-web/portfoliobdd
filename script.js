@@ -33,7 +33,10 @@ $('.wrap-tag2').on('click', function() {
         if(tag == 'br'){
         $area.val(content.substring(0, start)
         + '<' + tag + '>'
-       );
+        + content.substring(start, end)
+            + ''
+            + content.substring(end) )
+       
        }
  
    $area.focus();
@@ -50,9 +53,11 @@ $('.wrap-tag3').on('click', function() {
        content = $area.val();
 
         $area.val(content.substring(0, start)
-        + '<img src="admin/photo/' + tag + '"  alt="">'
-       );
-      
+        + '<img src="admin/photo/' + tag + '" alt="">'
+        + content.substring(start, end)
+            + ''
+            + content.substring(end) )
+        
  
    $area.focus();
    $area[0].selectionStart = $area[0].selectionEnd = end + 2 * tag.length + 5;
