@@ -8,7 +8,7 @@ $contenu = "";
 $reponseSuppression = "";
 if(!estConnecte()){
 
-    header('location:index.php');
+    header('location:../index.php');
     exit();
     }
 

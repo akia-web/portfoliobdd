@@ -1,11 +1,11 @@
 <?php
-
+require_once 'fonctions.php'; 
 $title = "Portfolio de charline";
 $contenu ="";
 
 
 
-require_once 'header.php';
+
 
 $resultatArticles = executeRequete("SELECT image, titre, commentaire, id, categorie_id FROM articles WHERE categorie_id = 26"); 
 
@@ -38,25 +38,13 @@ $resultatArticles = executeRequete("SELECT image, titre, commentaire, id, catego
                 $contenu .= '</div>';
                
                
-            } 
-            
-            
-        }
-       
-       
-        
-   
+            }             
+        } 
         $contenu .= '</div>';
 
-       
-
-
- 
- 
-      
 }   
 
-          
+require_once 'header.php';       
 ?>
 
 
@@ -70,9 +58,10 @@ $resultatArticles = executeRequete("SELECT image, titre, commentaire, id, catego
         <a href="#projets"><img class="icones icones3" src="images/arrow-down.svg" alt="Icone de fleche qui descent"></a>
     </section>
     
-    <p>Passionnée du développement web depuis l'année dernière, je me suis formée sur les langages Html / Css Php et javascript/jquery <br>
-    Je vous présente mes projets personnels ainsi que ceux réalisés en cours.
+    <p class="annonce">Passionnée depuis un peu plus d'un an au développement web, je cherche toujours à apprendre. Je préfère le côté back car j'aime l'automatisation. Cependant j'aime aussi le front s'il y a une maquette. Il n'y a pas un seul jour où je ne regarde pas de vidéos pour m'améliorer dans mon code.
     </p>
+
+    <a class="lien-Gauche lien-Gauche2" href="about.php"> En lire plus</a>
 
     <section class="container-bas">
 

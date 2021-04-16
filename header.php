@@ -1,7 +1,3 @@
-<?php
-include_once 'fonctions.php';
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +6,8 @@ include_once 'fonctions.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $description ?>">
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/images/favicon3.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-js/style.css">
     <title><?= $title ?></title>
@@ -24,7 +22,7 @@ include_once 'fonctions.php';
         <div class="menu-matieres">
             <ul class="ul-menu-matieres">
                 <a href="/portfoliobdd/#projets"><li class="li-menu">Développement <span class="slash"> / </span></li></a>
-                <a href="#"><li class="li-menu">Design <span class="slash"> / </span></li></a>
+                <a href="#"><li class="li-menu">Autres projets <span class="slash"> / </span></li></a>
                 <a href="about.php"><li class="li-menu">A propos</li></a>
             </ul>
         </div>
@@ -47,9 +45,9 @@ include_once 'fonctions.php';
     
     <div class="menu-matieres-tel">
                 <ul class="ul-menu-matieres-tel">
-                    <a href="/portfolio"><li class="li-menu">Accueil</li></a>
+                    <a href="/portfoliobdd"><li class="li-menu">Accueil</li></a>
                     <a href="/portfolio/#projets"><li class="li-menu">Développement</li></a>
-                    <a href="#"><li class="li-menu">Design</li></a>
+                    <a href="#"><li class="li-menu">Autres projets</li></a>
                     <a href="about.php"><li class="li-menu">A propos</li></a>
                     <a href="#"><li class="li-menu li-contact">Contact</li></a>
                 </ul>

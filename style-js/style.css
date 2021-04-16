@@ -13,6 +13,14 @@ body{
     background-color: rgb(243, 234, 240);
     
 }
+p{
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+  
+}
 
 main{
     width: 80%;
@@ -44,7 +52,15 @@ hr{
     display: flex;
     align-items: center;
    flex-direction: column;
+   position: relative;
+ 
 }
+
+.haut img{
+    position: absolute;
+    bottom: 100px;
+}
+
 
 .haut h1{
     animation: titre 0.5s linear;
@@ -55,6 +71,9 @@ hr{
     position : relative;
     padding-left: 0;
     padding-right: 0;
+    font-size: 35px;
+    
+    
    
 }
 
@@ -64,12 +83,18 @@ hr{
     top: 0 ;
     left: 0;
     width: 0;
+   
     height: 100%;
     color : #BB1159;
     overflow: hidden;
     /* border-right: 2px dotted pink; */
     animation: text 6s 0.5s linear infinite;
 
+}
+.annonce{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 @keyframes titre{
@@ -165,6 +190,10 @@ hr{
     background: white;
     transition : 0.3s linear;
     
+}
+
+.lien-Gauche2{
+    margin-top: 2em;
 }
 
 
@@ -321,12 +350,7 @@ h4{
     border: 2px solid black;
 }
 
-p{
-    margin-top: 0.5em;
-    margin-bottom: 1em;
- 
-   
-}
+
 
 /* LES FORMULAIRES */
 .form1{
@@ -604,6 +628,10 @@ color : white
  
 }
 
+#projet{
+    margin-top: 5em;
+}
+
 #menu{
     width: 30px;
     margin-top: 1em;
@@ -802,10 +830,16 @@ padding-bottom: 1em;
     .mainIndex{
         width: 100%;
     }
-   h4{
+    h4{
        margin-bottom: 2em;
-   }
+    }
+    .annonce{
+        width: 50%;
 
+    }
+    .haut p{
+        font-size: 50px;
+    }
   
     .container-card{
        display: flex;

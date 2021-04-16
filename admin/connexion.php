@@ -1,8 +1,12 @@
 <?php
 
-require_once 'header.php';
+require_once '../fonctions.php';
 
 $contenu = ''; // pour le message de deconnexion
+
+if(estConnecte()){
+    header('location:tableau.php');
+}
 
 if ($_POST) { // si le formulaire est envoyé
 
@@ -53,13 +57,24 @@ echo $contenu; // pour les autres messages
 
     
 ?>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style-js/style.css">
+    <title>Connexion</title>
+</head>
+<body>
 <form action="" method="post">
 
 <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
-<input type="text" name="mdp" id="mdp" placeholder="mot de passe">
+<input type="password" name="mdp" id="mdp" placeholder="mot de passe">
 <input type="submit"value="connexion">
 
 
-</form>
+</form> 
+</body>
+</html>
+

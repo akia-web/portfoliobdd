@@ -5,6 +5,11 @@ $contenu = '';
 $contenu2 = '';
 $contenu3 = '';
 // debug($_FILES);
+if(!estConnecte()){
+
+    header('location:../index.php');
+    exit();
+    }
 
 // Post du formulaire des articles
 if(!empty($_POST['submit'])&& $_POST['submit'] == 'article'){ 
@@ -50,7 +55,7 @@ if(!empty($_POST['submit'])&& $_POST['submit'] == 'article'){
                                      ':commentaire' => $_POST['commentaire']            
                                      ));
                                    
-//  header('location:tableau.php');
+ header('location:tableau.php');
 }}
 
 

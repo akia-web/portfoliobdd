@@ -6,6 +6,13 @@ $contenu='';
 $contenu2="";
 $contenu3="";
 $reponseSuppression="";
+
+if(!estConnecte()){
+
+    header('location:../index.php');
+    exit();
+    }
+
 //SUPPRIME LES PHOTOS
 if(isset($_GET['id'])){
     $succes2=executeRequete("SELECT * FROM images WHERE id=:id", array(':id' => $_GET['id']));
