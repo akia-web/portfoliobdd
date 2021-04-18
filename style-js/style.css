@@ -201,6 +201,10 @@ hr{
 
 
 /* LES PAGES */
+section{
+    width: 95%;
+    margin: 0 auto;
+}
 .centrer{
     text-align: center;
 } 
@@ -223,6 +227,12 @@ hr{
 .image-article{
     width: 100%;
     margin-top: 1em;
+}
+
+.image-article2{
+    width: 80%;
+    display: block;
+    margin: 1em auto 0 auto;
 }
 .container-img-articles-tel{
     display: flex;
@@ -893,6 +903,9 @@ padding-bottom: 1em;
        
    }
 
+   .image-article2{
+       width: 40%;
+   }
    .imagetel{
        width: 300px;
    }
