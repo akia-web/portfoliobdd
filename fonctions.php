@@ -9,7 +9,7 @@ function getConnexion(){
     $mdp = "";
 
     
-    //je sais meme pas comment ça marche global...
+  
     $pdo = new PDO("mysql:host=$host;dbname=$db", 
                 "$root", 
                 "$mdp", 
