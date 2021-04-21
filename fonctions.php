@@ -8,10 +8,7 @@ function getConnexion(){
     $root = "root";
     $mdp = "";
 
-    // $host = "mysql.cloud.local";
-    // $db = "inst94941";
-    // $root = "inst94941";
-    // $mdp = "OMprvWqejQCLY127";
+    
     //je sais meme pas comment ça marche global...
     $pdo = new PDO("mysql:host=$host;dbname=$db", 
                 "$root", 
